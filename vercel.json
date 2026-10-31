@@ -1,0 +1,14 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/personages", "destination": "/characters", "permanent": true },
+    { "source": "/locaties", "destination": "/locations", "permanent": true },
+    { "source": "/voertuigen", "destination": "/vehicles", "permanent": true },
+    { "source": "/edities", "destination": "/editions", "permanent": true },
+    { "source": "/nieuws", "destination": "/news", "permanent": true },
+    { "source": "/archief", "destination": "/archive", "permanent": true },
+    { "source": "/bronnen", "destination": "/sources", "permanent": true },
+    { "source": "/voorwaarden", "destination": "/terms", "permanent": true }
+  ]
+}
