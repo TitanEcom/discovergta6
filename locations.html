@@ -74,19 +74,54 @@
     {
       "@type": "Organization",
       "@id": "https://discovergta6.com/#org",
-      "name": "DiscoverGTA6", "alternateName": "Discover GTA 6",
+      "name": "DiscoverGTA6",
+      "alternateName": "Discover GTA 6",
       "url": "https://discovergta6.com/",
-      "logo": "https://discovergta6.com/logo/discover-gta6-avatar.png", "email": "support@titanecomgroup.com", "description": "Independent fan guide to Grand Theft Auto VI."
+      "logo": "https://discovergta6.com/logo/discover-gta6-avatar.png",
+      "email": "contact@discovergta6.com",
+      "description": "Independent fan guide to Grand Theft Auto VI."
     },
     {
       "@type": "WebSite",
       "@id": "https://discovergta6.com/#website",
-      "name": "DiscoverGTA6", "alternateName": "Discover GTA 6",
+      "name": "DiscoverGTA6",
+      "alternateName": "Discover GTA 6",
       "url": "https://discovergta6.com/",
       "inLanguage": "en",
       "publisher": {
         "@id": "https://discovergta6.com/#org"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://discovergta6.com/locations#faq",
+      "url": "https://discovergta6.com/locations",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where is GTA 6 set?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In the fictional state of Leonida, Rockstar's version of Florida. The main city is Vice City, based on Miami."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many regions does Leonida have?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Six: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park. See them on the map."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Liberty City in GTA 6?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not as a playable area. In GTA 6, Liberty City is part of Lucia's family history. More about Liberty City."
+          }
+        }
+      ]
     }
   ]
 }
@@ -132,6 +167,7 @@
         <a href="/archive" data-navlink="archive">Archive</a>
       </div>
       <div class="nav-sub">
+        <a href="/faq" data-navlink="faq">FAQ</a>
         <a href="/about" data-navlink="about">About us</a>
         <a href="/contact" data-navlink="contact">Contact</a>
         <a href="/sources" data-navlink="sources">Sources</a>
@@ -340,6 +376,14 @@
         <em>A gang compound. The raid on it is Ultimate content.</em>
       </span>
     </a></div>
+      <!--page-faq--><section class="page-faq" aria-labelledby="page-faq-title">
+      <h2 id="page-faq-title">Frequently asked questions</h2>
+      <div class="faq-list">
+        <details class="faq-acc" open><summary>Where is GTA 6 set?</summary><p>In the fictional state of Leonida, Rockstar's version of Florida. The main city is <a href="/locations/vice-city">Vice City</a>, based on Miami.</p></details>
+        <details class="faq-acc"><summary>How many regions does Leonida have?</summary><p>Six: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park. <a href="/map">See them on the map</a>.</p></details>
+        <details class="faq-acc"><summary>Is Liberty City in GTA 6?</summary><p>Not as a playable area. In GTA 6, Liberty City is part of Lucia's family history. <a href="/locations/liberty-city">More about Liberty City</a>.</p></details>
+      </div>
+    </section><!--/page-faq-->
     </div>
   </main>
     <footer class="foot">
@@ -348,7 +392,6 @@
         <a class="foot-logo" href="/" aria-label="Discover GTA 6 home"><img src="/logo/discover-gta6-logo.svg" alt="Discover GTA 6" width="808" height="144" loading="lazy"></a>
         <p>The independent fan guide to Grand Theft Auto VI. Characters, places, editions, and every confirmed detail, with a source behind each entry.</p>
         <p class="foot-release"><span>Release</span>November 19, 2026 · PS5 and Xbox Series X|S</p>
-        <a class="foot-mail" href="mailto:support@titanecomgroup.com">support@titanecomgroup.com</a>
       </div>
       <nav class="foot-col" aria-label="Explore">
         <p class="foot-head">Explore</p>
@@ -371,6 +414,7 @@
       </nav>
       <nav class="foot-col" aria-label="About">
         <p class="foot-head">About</p>
+        <a href="/faq">FAQ</a>
         <a href="/about">About us</a>
         <a href="/contact">Contact</a>
         <a href="/sources">Sources</a>

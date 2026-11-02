@@ -82,14 +82,18 @@
     {
       "@type": "Organization",
       "@id": "https://discovergta6.com/#org",
-      "name": "DiscoverGTA6", "alternateName": "Discover GTA 6",
+      "name": "DiscoverGTA6",
+      "alternateName": "Discover GTA 6",
       "url": "https://discovergta6.com/",
-      "logo": "https://discovergta6.com/logo/discover-gta6-avatar.png", "email": "support@titanecomgroup.com", "description": "Independent fan guide to Grand Theft Auto VI."
+      "logo": "https://discovergta6.com/logo/discover-gta6-avatar.png",
+      "email": "contact@discovergta6.com",
+      "description": "Independent fan guide to Grand Theft Auto VI."
     },
     {
       "@type": "WebSite",
       "@id": "https://discovergta6.com/#website",
-      "name": "DiscoverGTA6", "alternateName": "Discover GTA 6",
+      "name": "DiscoverGTA6",
+      "alternateName": "Discover GTA 6",
       "url": "https://discovergta6.com/",
       "inLanguage": "en",
       "publisher": {
@@ -113,6 +117,37 @@
         "@type": "Organization",
         "name": "Rockstar Games"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://discovergta6.com/map#faq",
+      "url": "https://discovergta6.com/map",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is there an official GTA 6 map?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not yet. Rockstar has not released a map of Leonida. This page shows our own schematic sketch based on Rockstar's region descriptions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How big is the GTA 6 map?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no official size. According to The New York Times, Vice City alone is about twice the size of Los Santos, and the world is about three times the playable area of Red Dead Redemption 2."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the GTA 6 map based on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "On Florida. Vice City is based on Miami, the Leonida Keys on the Florida Keys, and Grassrivers on the Everglades."
+          }
+        }
+      ]
     }
   ]
 }
@@ -183,6 +218,7 @@
         <a href="/archive" data-navlink="archive">Archive</a>
       </div>
       <div class="nav-sub">
+        <a href="/faq" data-navlink="faq">FAQ</a>
         <a href="/about" data-navlink="about">About us</a>
         <a href="/contact" data-navlink="contact">Contact</a>
         <a href="/sources" data-navlink="sources">Sources</a>
@@ -284,6 +320,14 @@
         <li><a href="https://www.iloveleonida.com/tools/map" rel="noopener noreferrer">I Love Leonida</a>, a schematic map with pins checked against Rockstar material.</li>
       </ul>
       <p class="fine">Region descriptions from Rockstar Games, as quoted by <a href="https://www.gtabase.com/gta-6/map-locations/" rel="noopener noreferrer">GTABase</a> and <a href="https://www.gtaboss.gg/gta-6/guides/gta-6-map" rel="noopener noreferrer">GTA Boss</a>; Vice City landmarks from <a href="https://mmoculture.com/tips-guides/gta-6-map-guide/" rel="noopener noreferrer">MMO Culture</a>; size figures from <a href="https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI" rel="noopener noreferrer">Wikipedia</a> and <a href="https://www.keengamer.com/articles/news/gta-6-extended-look-recap-all-gameplay-details/" rel="noopener noreferrer">KeenGamer</a>. Map drawing by Discover GTA 6. Updated November 2, 2026.</p>
+      <!--page-faq--><section class="page-faq" aria-labelledby="page-faq-title">
+      <h2 id="page-faq-title">Frequently asked questions</h2>
+      <div class="faq-list">
+        <details class="faq-acc" open><summary>Is there an official GTA 6 map?</summary><p>Not yet. Rockstar has not released a map of Leonida. This page shows our own schematic sketch based on Rockstar's region descriptions.</p></details>
+        <details class="faq-acc"><summary>How big is the GTA 6 map?</summary><p>There is no official size. According to The New York Times, Vice City alone is about twice the size of Los Santos, and the world is about three times the playable area of Red Dead Redemption 2.</p></details>
+        <details class="faq-acc"><summary>What is the GTA 6 map based on?</summary><p>On Florida. Vice City is based on Miami, the Leonida Keys on the Florida Keys, and Grassrivers on the Everglades.</p></details>
+      </div>
+    </section><!--/page-faq-->
     </div>
   </main>
   <footer class="foot">
@@ -292,7 +336,6 @@
         <a class="foot-logo" href="/" aria-label="Discover GTA 6 home"><img src="/logo/discover-gta6-logo.svg" alt="Discover GTA 6" width="808" height="144" loading="lazy"></a>
         <p>The independent fan guide to Grand Theft Auto VI. Characters, places, editions, and every confirmed detail, with a source behind each entry.</p>
         <p class="foot-release"><span>Release</span>November 19, 2026 · PS5 and Xbox Series X|S</p>
-        <a class="foot-mail" href="mailto:support@titanecomgroup.com">support@titanecomgroup.com</a>
       </div>
       <nav class="foot-col" aria-label="Explore">
         <p class="foot-head">Explore</p>
@@ -315,6 +358,7 @@
       </nav>
       <nav class="foot-col" aria-label="About">
         <p class="foot-head">About</p>
+        <a href="/faq">FAQ</a>
         <a href="/about">About us</a>
         <a href="/contact">Contact</a>
         <a href="/sources">Sources</a>

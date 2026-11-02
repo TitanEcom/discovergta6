@@ -1293,3 +1293,49 @@ nav.kicker a { color: var(--sand); }
 .map-legend { justify-content: flex-start; }
 
 .prose .pill { min-height: 44px; }
+
+.contact-help { margin-top: 2.6rem; }
+
+/* FAQ */
+.faq-toc { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0 0 1.6rem; }
+.faq-toc a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 .95rem;
+  border: 1px solid var(--line);
+  border-radius: 9999px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: .9rem;
+}
+.faq-toc a:hover { border-color: rgba(255, 178, 198, .6); color: #fff; }
+.faq-group { max-width: 72ch; margin-bottom: 2.4rem; }
+.faq-group h2 { margin: 0 0 .4rem; padding-bottom: .5rem; border-bottom: 1px solid var(--line); font-size: clamp(1.8rem, 3vw, 2.3rem); scroll-margin-top: calc(var(--offset) + 1rem); }
+.faq-item { padding: 1rem 0; border-bottom: 1px solid var(--line); scroll-margin-top: calc(var(--offset) + 1rem); }
+.faq-item h3 { margin: 0 0 .35rem; font-family: var(--sans); font-size: 1.12rem; font-weight: 600; letter-spacing: 0; }
+.faq-item p, .faq-acc p { margin: 0; color: var(--text); }
+.faq-item a, .faq-acc a { color: var(--sand); text-underline-offset: 3px; }
+.faq-item strong, .faq-acc strong { color: #fff; font-weight: 500; }
+.faq-list { display: grid; gap: .6rem; max-width: 62rem; }
+.faq-acc { border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); }
+.faq-acc summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 56px;
+  padding: .8rem 1.1rem;
+  cursor: pointer;
+  font-weight: 500;
+  list-style: none;
+}
+.faq-acc summary::-webkit-details-marker { display: none; }
+.faq-acc summary::after { content: "+"; flex: 0 0 auto; color: var(--sand); font-size: 1.4rem; line-height: 1; }
+.faq-acc[open] summary::after { content: "−"; }
+.faq-acc p { padding: 0 1.1rem 1.1rem; }
+
+/* Page FAQ */
+.page-faq { margin: 3rem 0 0; max-width: 62rem; }
+.page-faq h2 { margin: 0 0 1rem; font-size: clamp(1.8rem, 3vw, 2.4rem); }
+.page-main .page-faq { margin-top: 3.2rem; }

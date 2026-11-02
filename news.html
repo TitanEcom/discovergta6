@@ -74,19 +74,54 @@
     {
       "@type": "Organization",
       "@id": "https://discovergta6.com/#org",
-      "name": "DiscoverGTA6", "alternateName": "Discover GTA 6",
+      "name": "DiscoverGTA6",
+      "alternateName": "Discover GTA 6",
       "url": "https://discovergta6.com/",
-      "logo": "https://discovergta6.com/logo/discover-gta6-avatar.png", "email": "support@titanecomgroup.com", "description": "Independent fan guide to Grand Theft Auto VI."
+      "logo": "https://discovergta6.com/logo/discover-gta6-avatar.png",
+      "email": "contact@discovergta6.com",
+      "description": "Independent fan guide to Grand Theft Auto VI."
     },
     {
       "@type": "WebSite",
       "@id": "https://discovergta6.com/#website",
-      "name": "DiscoverGTA6", "alternateName": "Discover GTA 6",
+      "name": "DiscoverGTA6",
+      "alternateName": "Discover GTA 6",
       "url": "https://discovergta6.com/",
       "inLanguage": "en",
       "publisher": {
         "@id": "https://discovergta6.com/#org"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://discovergta6.com/news#faq",
+      "url": "https://discovergta6.com/news",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "When was GTA 6 announced?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rockstar confirmed development on February 4, 2022, and revealed the game with Trailer 1 on December 5, 2023."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why was GTA 6 delayed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It moved twice: first to May 26, 2026, then to November 19, 2026. Rockstar named extra polish as the reason. Read more."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will there be another GTA 6 trailer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rockstar called the October 15, 2026 launch trailer its last big trailer before release. No new trailer has been announced."
+          }
+        }
+      ]
     }
   ]
 }
@@ -132,6 +167,7 @@
         <a href="/archive" data-navlink="archive">Archive</a>
       </div>
       <div class="nav-sub">
+        <a href="/faq" data-navlink="faq">FAQ</a>
         <a href="/about" data-navlink="about">About us</a>
         <a href="/contact" data-navlink="contact">Contact</a>
         <a href="/sources" data-navlink="sources">Sources</a>
@@ -232,6 +268,14 @@
         <em>On February 4, 2022, the studio says the new entry is in full production.</em>
       </span>
     </a></div>
+      <!--page-faq--><section class="page-faq" aria-labelledby="page-faq-title">
+      <h2 id="page-faq-title">Frequently asked questions</h2>
+      <div class="faq-list">
+        <details class="faq-acc" open><summary>When was GTA 6 announced?</summary><p>Rockstar confirmed development on February 4, 2022, and revealed the game with Trailer 1 on December 5, 2023.</p></details>
+        <details class="faq-acc"><summary>Why was GTA 6 delayed?</summary><p>It moved twice: first to May 26, 2026, then to November 19, 2026. Rockstar named extra polish as the reason. <a href="/news/release-date-november">Read more</a>.</p></details>
+        <details class="faq-acc"><summary>Will there be another GTA 6 trailer?</summary><p>Rockstar called the October 15, 2026 launch trailer its last big trailer before release. No new trailer has been announced.</p></details>
+      </div>
+    </section><!--/page-faq-->
     </div>
   </main>
     <footer class="foot">
@@ -240,7 +284,6 @@
         <a class="foot-logo" href="/" aria-label="Discover GTA 6 home"><img src="/logo/discover-gta6-logo.svg" alt="Discover GTA 6" width="808" height="144" loading="lazy"></a>
         <p>The independent fan guide to Grand Theft Auto VI. Characters, places, editions, and every confirmed detail, with a source behind each entry.</p>
         <p class="foot-release"><span>Release</span>November 19, 2026 · PS5 and Xbox Series X|S</p>
-        <a class="foot-mail" href="mailto:support@titanecomgroup.com">support@titanecomgroup.com</a>
       </div>
       <nav class="foot-col" aria-label="Explore">
         <p class="foot-head">Explore</p>
@@ -263,6 +306,7 @@
       </nav>
       <nav class="foot-col" aria-label="About">
         <p class="foot-head">About</p>
+        <a href="/faq">FAQ</a>
         <a href="/about">About us</a>
         <a href="/contact">Contact</a>
         <a href="/sources">Sources</a>

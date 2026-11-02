@@ -74,19 +74,54 @@
     {
       "@type": "Organization",
       "@id": "https://discovergta6.com/#org",
-      "name": "DiscoverGTA6", "alternateName": "Discover GTA 6",
+      "name": "DiscoverGTA6",
+      "alternateName": "Discover GTA 6",
       "url": "https://discovergta6.com/",
-      "logo": "https://discovergta6.com/logo/discover-gta6-avatar.png", "email": "support@titanecomgroup.com", "description": "Independent fan guide to Grand Theft Auto VI."
+      "logo": "https://discovergta6.com/logo/discover-gta6-avatar.png",
+      "email": "contact@discovergta6.com",
+      "description": "Independent fan guide to Grand Theft Auto VI."
     },
     {
       "@type": "WebSite",
       "@id": "https://discovergta6.com/#website",
-      "name": "DiscoverGTA6", "alternateName": "Discover GTA 6",
+      "name": "DiscoverGTA6",
+      "alternateName": "Discover GTA 6",
       "url": "https://discovergta6.com/",
       "inLanguage": "en",
       "publisher": {
         "@id": "https://discovergta6.com/#org"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://discovergta6.com/vehicles#faq",
+      "url": "https://discovergta6.com/vehicles",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How many vehicles are in GTA 6?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rockstar has not published a full list. Seven vehicles and three weapons are named in the edition texts so far, and the trailers show many more cars, boats, and aircraft."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which vehicles come with the Ultimate Edition?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The '95 Grotti Cheetah, the Shitzu Squalo, the '67 Dominator Buggy, Jason's Dinka Enduro and Crest Kayak, and a Ganado retro build. Full Ultimate list."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many weapons can you carry in GTA 6?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Previews say two primary firearms and two sidearms at once, with more weapons stored in a vehicle."
+          }
+        }
+      ]
     }
   ]
 }
@@ -132,6 +167,7 @@
         <a href="/archive" data-navlink="archive">Archive</a>
       </div>
       <div class="nav-sub">
+        <a href="/faq" data-navlink="faq">FAQ</a>
         <a href="/about" data-navlink="about">About us</a>
         <a href="/contact" data-navlink="contact">Contact</a>
         <a href="/sources" data-navlink="sources">Sources</a>
@@ -221,6 +257,14 @@
         <em>Lucia&#39;s pistol, with an engraved Ultimate variant.</em>
       </span>
     </a></div>
+      <!--page-faq--><section class="page-faq" aria-labelledby="page-faq-title">
+      <h2 id="page-faq-title">Frequently asked questions</h2>
+      <div class="faq-list">
+        <details class="faq-acc" open><summary>How many vehicles are in GTA 6?</summary><p>Rockstar has not published a full list. Seven vehicles and three weapons are named in the edition texts so far, and the trailers show many more cars, boats, and aircraft.</p></details>
+        <details class="faq-acc"><summary>Which vehicles come with the Ultimate Edition?</summary><p>The '95 Grotti Cheetah, the Shitzu Squalo, the '67 Dominator Buggy, Jason's Dinka Enduro and Crest Kayak, and a Ganado retro build. <a href="/editions/ultimate">Full Ultimate list</a>.</p></details>
+        <details class="faq-acc"><summary>How many weapons can you carry in GTA 6?</summary><p>Previews say two primary firearms and two sidearms at once, with more weapons stored in a vehicle.</p></details>
+      </div>
+    </section><!--/page-faq-->
     </div>
   </main>
     <footer class="foot">
@@ -229,7 +273,6 @@
         <a class="foot-logo" href="/" aria-label="Discover GTA 6 home"><img src="/logo/discover-gta6-logo.svg" alt="Discover GTA 6" width="808" height="144" loading="lazy"></a>
         <p>The independent fan guide to Grand Theft Auto VI. Characters, places, editions, and every confirmed detail, with a source behind each entry.</p>
         <p class="foot-release"><span>Release</span>November 19, 2026 · PS5 and Xbox Series X|S</p>
-        <a class="foot-mail" href="mailto:support@titanecomgroup.com">support@titanecomgroup.com</a>
       </div>
       <nav class="foot-col" aria-label="Explore">
         <p class="foot-head">Explore</p>
@@ -252,6 +295,7 @@
       </nav>
       <nav class="foot-col" aria-label="About">
         <p class="foot-head">About</p>
+        <a href="/faq">FAQ</a>
         <a href="/about">About us</a>
         <a href="/contact">Contact</a>
         <a href="/sources">Sources</a>

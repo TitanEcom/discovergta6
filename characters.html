@@ -74,19 +74,54 @@
     {
       "@type": "Organization",
       "@id": "https://discovergta6.com/#org",
-      "name": "DiscoverGTA6", "alternateName": "Discover GTA 6",
+      "name": "DiscoverGTA6",
+      "alternateName": "Discover GTA 6",
       "url": "https://discovergta6.com/",
-      "logo": "https://discovergta6.com/logo/discover-gta6-avatar.png", "email": "support@titanecomgroup.com", "description": "Independent fan guide to Grand Theft Auto VI."
+      "logo": "https://discovergta6.com/logo/discover-gta6-avatar.png",
+      "email": "contact@discovergta6.com",
+      "description": "Independent fan guide to Grand Theft Auto VI."
     },
     {
       "@type": "WebSite",
       "@id": "https://discovergta6.com/#website",
-      "name": "DiscoverGTA6", "alternateName": "Discover GTA 6",
+      "name": "DiscoverGTA6",
+      "alternateName": "Discover GTA 6",
       "url": "https://discovergta6.com/",
       "inLanguage": "en",
       "publisher": {
         "@id": "https://discovergta6.com/#org"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://discovergta6.com/characters#faq",
+      "url": "https://discovergta6.com/characters",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who are the main characters in GTA 6?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The two playable leads are Jason Duval and Lucia Caminos. Rockstar has also profiled Cal Hampton, Boobie Ike, Dre'Quan Priest, Real Dimez, Raul Bautista, and Brian Heder."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who plays Jason in GTA 6?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rockstar has not confirmed the voice actors for Jason or Lucia. Names circulate online, but none are official."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you play as both Jason and Lucia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. You can switch between them, also during missions. How switching works."
+          }
+        }
+      ]
     }
   ]
 }
@@ -132,6 +167,7 @@
         <a href="/archive" data-navlink="archive">Archive</a>
       </div>
       <div class="nav-sub">
+        <a href="/faq" data-navlink="faq">FAQ</a>
         <a href="/about" data-navlink="about">About us</a>
         <a href="/contact" data-navlink="contact">Contact</a>
         <a href="/sources" data-navlink="sources">Sources</a>
@@ -233,6 +269,14 @@
         <em>A cartoon character from a hit series in the state, and the mascot of an Ultimate clothing line.</em>
       </span>
     </a></div>
+      <!--page-faq--><section class="page-faq" aria-labelledby="page-faq-title">
+      <h2 id="page-faq-title">Frequently asked questions</h2>
+      <div class="faq-list">
+        <details class="faq-acc" open><summary>Who are the main characters in GTA 6?</summary><p>The two playable leads are <a href="/characters/jason-duval">Jason Duval</a> and <a href="/characters/lucia-caminos">Lucia Caminos</a>. Rockstar has also profiled Cal Hampton, Boobie Ike, Dre'Quan Priest, Real Dimez, Raul Bautista, and Brian Heder.</p></details>
+        <details class="faq-acc"><summary>Who plays Jason in GTA 6?</summary><p>Rockstar has not confirmed the voice actors for Jason or Lucia. Names circulate online, but none are official.</p></details>
+        <details class="faq-acc"><summary>Can you play as both Jason and Lucia?</summary><p>Yes. You can switch between them, also during missions. <a href="/gameplay/switching">How switching works</a>.</p></details>
+      </div>
+    </section><!--/page-faq-->
     </div>
   </main>
     <footer class="foot">
@@ -241,7 +285,6 @@
         <a class="foot-logo" href="/" aria-label="Discover GTA 6 home"><img src="/logo/discover-gta6-logo.svg" alt="Discover GTA 6" width="808" height="144" loading="lazy"></a>
         <p>The independent fan guide to Grand Theft Auto VI. Characters, places, editions, and every confirmed detail, with a source behind each entry.</p>
         <p class="foot-release"><span>Release</span>November 19, 2026 · PS5 and Xbox Series X|S</p>
-        <a class="foot-mail" href="mailto:support@titanecomgroup.com">support@titanecomgroup.com</a>
       </div>
       <nav class="foot-col" aria-label="Explore">
         <p class="foot-head">Explore</p>
@@ -264,6 +307,7 @@
       </nav>
       <nav class="foot-col" aria-label="About">
         <p class="foot-head">About</p>
+        <a href="/faq">FAQ</a>
         <a href="/about">About us</a>
         <a href="/contact">Contact</a>
         <a href="/sources">Sources</a>

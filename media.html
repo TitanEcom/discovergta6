@@ -72,19 +72,54 @@
     {
       "@type": "Organization",
       "@id": "https://discovergta6.com/#org",
-      "name": "DiscoverGTA6", "alternateName": "Discover GTA 6",
+      "name": "DiscoverGTA6",
+      "alternateName": "Discover GTA 6",
       "url": "https://discovergta6.com/",
-      "logo": "https://discovergta6.com/logo/discover-gta6-avatar.png", "email": "support@titanecomgroup.com", "description": "Independent fan guide to Grand Theft Auto VI."
+      "logo": "https://discovergta6.com/logo/discover-gta6-avatar.png",
+      "email": "contact@discovergta6.com",
+      "description": "Independent fan guide to Grand Theft Auto VI."
     },
     {
       "@type": "WebSite",
       "@id": "https://discovergta6.com/#website",
-      "name": "DiscoverGTA6", "alternateName": "Discover GTA 6",
+      "name": "DiscoverGTA6",
+      "alternateName": "Discover GTA 6",
       "url": "https://discovergta6.com/",
       "inLanguage": "en",
       "publisher": {
         "@id": "https://discovergta6.com/#org"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://discovergta6.com/media#faq",
+      "url": "https://discovergta6.com/media",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How many official GTA 6 trailers are there?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Four official films: Trailer 1, Trailer 2, An Extended Look, and the launch trailer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What song is in the first GTA 6 trailer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Love Is a Long Road by Tom Petty. More about Trailer 1."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What song is in the GTA 6 launch trailer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Flower in a Hurricane by Justice, with Tame Impala, SZA, and King Gizzard & The Lizard Wizard."
+          }
+        }
+      ]
     }
   ]
 }
@@ -130,6 +165,7 @@
         <a href="/archive" data-navlink="archive">Archive</a>
       </div>
       <div class="nav-sub">
+        <a href="/faq" data-navlink="faq">FAQ</a>
         <a href="/about" data-navlink="about">About us</a>
         <a href="/contact" data-navlink="contact">Contact</a>
         <a href="/sources" data-navlink="sources">Sources</a>
@@ -170,6 +206,14 @@
         <p>Justice is writing the score. GTA VI: The Album, announced on September 17, 2026, has 34 original songs and arrives with the game. The six radio stations from the October 8 preview are a separate selection of existing records, heard only as clips on the official music page.</p>
         <p><a class="pill pill-arrow" href="https://www.rockstargames.com/VI" rel="noopener noreferrer">Learn More</a></p>
       </article>
+      <!--page-faq--><section class="page-faq" aria-labelledby="page-faq-title">
+      <h2 id="page-faq-title">Frequently asked questions</h2>
+      <div class="faq-list">
+        <details class="faq-acc" open><summary>How many official GTA 6 trailers are there?</summary><p>Four official films: Trailer 1, Trailer 2, An Extended Look, and the launch trailer.</p></details>
+        <details class="faq-acc"><summary>What song is in the first GTA 6 trailer?</summary><p>Love Is a Long Road by Tom Petty. <a href="/news/first-trailer">More about Trailer 1</a>.</p></details>
+        <details class="faq-acc"><summary>What song is in the GTA 6 launch trailer?</summary><p>Flower in a Hurricane by Justice, with Tame Impala, SZA, and King Gizzard &amp; The Lizard Wizard.</p></details>
+      </div>
+    </section><!--/page-faq-->
     </div>
   </main>
     <footer class="foot">
@@ -178,7 +222,6 @@
         <a class="foot-logo" href="/" aria-label="Discover GTA 6 home"><img src="/logo/discover-gta6-logo.svg" alt="Discover GTA 6" width="808" height="144" loading="lazy"></a>
         <p>The independent fan guide to Grand Theft Auto VI. Characters, places, editions, and every confirmed detail, with a source behind each entry.</p>
         <p class="foot-release"><span>Release</span>November 19, 2026 · PS5 and Xbox Series X|S</p>
-        <a class="foot-mail" href="mailto:support@titanecomgroup.com">support@titanecomgroup.com</a>
       </div>
       <nav class="foot-col" aria-label="Explore">
         <p class="foot-head">Explore</p>
@@ -201,6 +244,7 @@
       </nav>
       <nav class="foot-col" aria-label="About">
         <p class="foot-head">About</p>
+        <a href="/faq">FAQ</a>
         <a href="/about">About us</a>
         <a href="/contact">Contact</a>
         <a href="/sources">Sources</a>

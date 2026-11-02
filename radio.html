@@ -74,19 +74,54 @@
     {
       "@type": "Organization",
       "@id": "https://discovergta6.com/#org",
-      "name": "DiscoverGTA6", "alternateName": "Discover GTA 6",
+      "name": "DiscoverGTA6",
+      "alternateName": "Discover GTA 6",
       "url": "https://discovergta6.com/",
-      "logo": "https://discovergta6.com/logo/discover-gta6-avatar.png", "email": "support@titanecomgroup.com", "description": "Independent fan guide to Grand Theft Auto VI."
+      "logo": "https://discovergta6.com/logo/discover-gta6-avatar.png",
+      "email": "contact@discovergta6.com",
+      "description": "Independent fan guide to Grand Theft Auto VI."
     },
     {
       "@type": "WebSite",
       "@id": "https://discovergta6.com/#website",
-      "name": "DiscoverGTA6", "alternateName": "Discover GTA 6",
+      "name": "DiscoverGTA6",
+      "alternateName": "Discover GTA 6",
       "url": "https://discovergta6.com/",
       "inLanguage": "en",
       "publisher": {
         "@id": "https://discovergta6.com/#org"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://discovergta6.com/radio#faq",
+      "url": "https://discovergta6.com/radio",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How many radio stations does GTA 6 have?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rockstar previewed six stations in October 2026. The full number has not been announced, and Rockstar says the radio spans everything from classic rock to talk radio."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you listen to the radio outside the car?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. For the first time in the series, radio and on-demand podcasts play on foot through headphones and earbuds connected to the phone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who made the GTA 6 soundtrack?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "French duo Justice wrote the original score, out December 11, 2026. GTA VI: The Album, with 34 original songs, comes out with the game."
+          }
+        }
+      ]
     }
   ]
 }
@@ -132,6 +167,7 @@
         <a href="/archive" data-navlink="archive">Archive</a>
       </div>
       <div class="nav-sub">
+        <a href="/faq" data-navlink="faq">FAQ</a>
         <a href="/about" data-navlink="about">About us</a>
         <a href="/contact" data-navlink="contact">Contact</a>
         <a href="/sources" data-navlink="sources">Sources</a>
@@ -195,6 +231,14 @@
         <p>Reference works name V-Rock, Emotion 98.3, and Vice City FM as returning titles from earlier Vice City games. They were not in the six-station preview. Until Rockstar broadcasts them, they are names from the series’ history, not a confirmed VI playlist.</p>
         <p><a href="/media">Trailer music and the album</a></p>
       </div>
+      <!--page-faq--><section class="page-faq" aria-labelledby="page-faq-title">
+      <h2 id="page-faq-title">Frequently asked questions</h2>
+      <div class="faq-list">
+        <details class="faq-acc" open><summary>How many radio stations does GTA 6 have?</summary><p>Rockstar previewed six stations in October 2026. The full number has not been announced, and Rockstar says the radio spans everything from classic rock to talk radio.</p></details>
+        <details class="faq-acc"><summary>Can you listen to the radio outside the car?</summary><p>Yes. For the first time in the series, radio and on-demand podcasts play on foot through headphones and earbuds connected to the phone.</p></details>
+        <details class="faq-acc"><summary>Who made the GTA 6 soundtrack?</summary><p>French duo Justice wrote the original score, out December 11, 2026. GTA VI: The Album, with 34 original songs, comes out with the game.</p></details>
+      </div>
+    </section><!--/page-faq-->
     </div>
   </main>
     <footer class="foot">
@@ -203,7 +247,6 @@
         <a class="foot-logo" href="/" aria-label="Discover GTA 6 home"><img src="/logo/discover-gta6-logo.svg" alt="Discover GTA 6" width="808" height="144" loading="lazy"></a>
         <p>The independent fan guide to Grand Theft Auto VI. Characters, places, editions, and every confirmed detail, with a source behind each entry.</p>
         <p class="foot-release"><span>Release</span>November 19, 2026 · PS5 and Xbox Series X|S</p>
-        <a class="foot-mail" href="mailto:support@titanecomgroup.com">support@titanecomgroup.com</a>
       </div>
       <nav class="foot-col" aria-label="Explore">
         <p class="foot-head">Explore</p>
@@ -226,6 +269,7 @@
       </nav>
       <nav class="foot-col" aria-label="About">
         <p class="foot-head">About</p>
+        <a href="/faq">FAQ</a>
         <a href="/about">About us</a>
         <a href="/contact">Contact</a>
         <a href="/sources">Sources</a>

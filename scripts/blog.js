@@ -9,7 +9,7 @@ const path = require("path");
 const root = path.join(__dirname, "..");
 const ORIGIN = "https://discovergta6.com";
 const BRAND = "DiscoverGTA6";
-const EMAIL = "support@titanecomgroup.com";
+const EMAIL = "contact@discovergta6.com";
 const today = process.env.BLOG_TODAY || new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Amsterdam" });
 
 const read = (p) => fs.readFileSync(path.join(root, p), "utf8");
@@ -66,6 +66,23 @@ function card(post) {
     </a>`;
 }
 
+// FAQ block and schema node, shared by posts and the index
+function faqBlock(qs) {
+  if (!qs || !qs.length) return "";
+  return `<!--page-faq--><section class="page-faq" aria-labelledby="page-faq-title">
+      <h2 id="page-faq-title">Frequently asked questions</h2>
+      <div class="faq-list">
+        ${qs.map(([q, a], i) => `<details class="faq-acc"${i === 0 ? " open" : ""}><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("\n        ")}
+      </div>
+    </section><!--/page-faq-->`;
+}
+const faqNode = (qs, url) => ({ "@type": "FAQPage", "@id": `${ORIGIN}${url}#faq`, url: ORIGIN + url,
+  mainEntity: qs.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) });
+const INDEX_FAQ = [
+  ["How often is there a new blog post?", "Every day in the run-up to the November 19, 2026 launch."],
+  ["Can I suggest a topic?", "Yes. Send it through the contact form."]
+];
+
 // posts
 const keep = new Set();
 for (const post of published) {
@@ -81,6 +98,7 @@ for (const post of published) {
     },
     crumbs([["Home", "/"], ["Blog", "/blog"], [post.title, url]]), ORG, SITE
   ];
+  if (post.faq && post.faq.length) graph.push(faqNode(post.faq, url));
   const more = published.filter((p) => p.slug !== post.slug).slice(0, 3);
   const sources = post.sources.map(([label, href]) => `<a href="${esc(href)}" rel="noopener noreferrer">${esc(label)}</a>`).join(", ");
   const html = `${head({ title, desc: post.description, url, image: post.image, type: "article", graph, published: post.date })}${header("blog")}<main id="inhoud" class="article-page blog-post">
@@ -95,6 +113,7 @@ for (const post of published) {
       ${post.body.join("\n      ")}
       <p class="fine">Sources: ${sources}. Spotted a mistake? <a href="/contact">Let us know</a>.</p>
     </article>
+    ${faqBlock(post.faq)}
     ${more.length ? `<h2>More from the blog</h2><div class="catalog">${more.map(card).join("")}</div>` : ""}
   </main>
   ${shellFooter}`;
@@ -113,7 +132,7 @@ if (fs.existsSync(path.join(root, "blog"))) {
   const graph = [
     { "@type": "CollectionPage", "@id": `${ORIGIN}/blog#webpage`, url: `${ORIGIN}/blog`, name: title, description: desc, inLanguage: "en", isPartOf: { "@id": `${ORIGIN}/#website` },
       mainEntity: { "@type": "ItemList", itemListElement: published.map((p, i) => ({ "@type": "ListItem", position: i + 1, url: `${ORIGIN}/blog/${p.slug}`, name: p.title })) } },
-    crumbs([["Home", "/"], ["Blog", "/blog"]]), ORG, SITE
+    crumbs([["Home", "/"], ["Blog", "/blog"]]), ORG, SITE, faqNode(INDEX_FAQ, "/blog")
   ];
   write("blog.html", `${head({ title, desc, url: "/blog", image, type: "website", graph })}${header("blog")}<main id="inhoud">
     <header class="page-hero">
@@ -123,6 +142,7 @@ if (fs.existsSync(path.join(root, "blog"))) {
     </header>
     <div class="page-main">
       <div class="catalog">${published.map(card).join("")}</div>
+      ${faqBlock(INDEX_FAQ)}
     </div>
   </main>
   ${shellFooter}`);

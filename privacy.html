@@ -73,19 +73,46 @@
     {
       "@type": "Organization",
       "@id": "https://discovergta6.com/#org",
-      "name": "DiscoverGTA6", "alternateName": "Discover GTA 6",
+      "name": "DiscoverGTA6",
+      "alternateName": "Discover GTA 6",
       "url": "https://discovergta6.com/",
-      "logo": "https://discovergta6.com/logo/discover-gta6-avatar.png", "email": "support@titanecomgroup.com", "description": "Independent fan guide to Grand Theft Auto VI."
+      "logo": "https://discovergta6.com/logo/discover-gta6-avatar.png",
+      "email": "contact@discovergta6.com",
+      "description": "Independent fan guide to Grand Theft Auto VI."
     },
     {
       "@type": "WebSite",
       "@id": "https://discovergta6.com/#website",
-      "name": "DiscoverGTA6", "alternateName": "Discover GTA 6",
+      "name": "DiscoverGTA6",
+      "alternateName": "Discover GTA 6",
       "url": "https://discovergta6.com/",
       "inLanguage": "en",
       "publisher": {
         "@id": "https://discovergta6.com/#org"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://discovergta6.com/privacy#faq",
+      "url": "https://discovergta6.com/privacy",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does Discover GTA 6 use cookies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Google Analytics and Google AdSense set cookies. Vercel Web Analytics works without cookies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I opt out of personalized ads?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, through Google's ad settings or aboutads.info. The links are in the advertising section above."
+          }
+        }
+      ]
     }
   ]
 }
@@ -131,6 +158,7 @@
         <a href="/archive" data-navlink="archive">Archive</a>
       </div>
       <div class="nav-sub">
+        <a href="/faq" data-navlink="faq">FAQ</a>
         <a href="/about" data-navlink="about">About us</a>
         <a href="/contact" data-navlink="contact">Contact</a>
         <a href="/sources" data-navlink="sources">Sources</a>
@@ -147,7 +175,7 @@
     </header>
     <div class="page-main prose">
       <h2>1. Who</h2>
-      <p>Discover GTA 6 (discovergta6.com) is an independent fan project. For questions about this notice, email <a href="mailto:support@titanecomgroup.com">support@titanecomgroup.com</a> or use the <a href="/contact">contact page</a>.</p>
+      <p>Discover GTA 6 (discovergta6.com) is an independent fan project. For questions about this notice, use the <a href="/contact">contact page</a>.</p>
       <h2>2. Hosting</h2>
       <p>The site is hosted on Vercel. Like any web host, Vercel receives technical data with each visit, such as your IP address, browser type, and the page you request, and may keep it in short-lived server logs for security and operation.</p>
       <h2>3. Google Analytics</h2>
@@ -169,6 +197,13 @@
       <p>The site is not for children. Grand Theft Auto VI is rated for adults. Do not send a minor’s details through the form.</p>
       <h2>11. Changes</h2>
       <p>If this notice changes, the date at the top changes with it.</p>
+      <!--page-faq--><section class="page-faq" aria-labelledby="page-faq-title">
+      <h2 id="page-faq-title">Frequently asked questions</h2>
+      <div class="faq-list">
+        <details class="faq-acc" open><summary>Does Discover GTA 6 use cookies?</summary><p>Yes. Google Analytics and Google AdSense set cookies. Vercel Web Analytics works without cookies.</p></details>
+        <details class="faq-acc"><summary>Can I opt out of personalized ads?</summary><p>Yes, through Google's ad settings or aboutads.info. The links are in the advertising section above.</p></details>
+      </div>
+    </section><!--/page-faq-->
     </div>
   </main>
     <footer class="foot">
@@ -177,7 +212,6 @@
         <a class="foot-logo" href="/" aria-label="Discover GTA 6 home"><img src="/logo/discover-gta6-logo.svg" alt="Discover GTA 6" width="808" height="144" loading="lazy"></a>
         <p>The independent fan guide to Grand Theft Auto VI. Characters, places, editions, and every confirmed detail, with a source behind each entry.</p>
         <p class="foot-release"><span>Release</span>November 19, 2026 · PS5 and Xbox Series X|S</p>
-        <a class="foot-mail" href="mailto:support@titanecomgroup.com">support@titanecomgroup.com</a>
       </div>
       <nav class="foot-col" aria-label="Explore">
         <p class="foot-head">Explore</p>
@@ -200,6 +234,7 @@
       </nav>
       <nav class="foot-col" aria-label="About">
         <p class="foot-head">About</p>
+        <a href="/faq">FAQ</a>
         <a href="/about">About us</a>
         <a href="/contact">Contact</a>
         <a href="/sources">Sources</a>

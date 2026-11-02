@@ -15,6 +15,7 @@ const IMG = {
 module.exports = [
   {
     slug: "gta-6-17-days-everything-confirmed",
+    faq: [["When does GTA 6 come out?","On Thursday, November 19, 2026 for PlayStation 5 and Xbox Series X|S, with preload from November 12."],["Is GTA 6 on PC at launch?","No. Rockstar has not announced a PC version. A report points to early 2027, but it is unconfirmed."],["Does GTA 6 have microtransactions?","Not at launch, according to Rockstar."]],
     date: "2026-11-02",
     title: "17 days to GTA 6: everything that is confirmed",
     seoTitle: "GTA 6 in 17 Days? See everything confirmed",
@@ -50,6 +51,7 @@ module.exports = [
   },
   {
     slug: "gta-6-justice-original-score",
+    faq: [["When does the GTA 6 score by Justice come out?","On December 11, 2026, on streaming services and on CD and vinyl, with 30 tracks."],["Is the score the same as GTA VI: The Album?","No. The Album has 34 original songs by other artists and comes out with the game on November 19. The score is the game's own music by Justice."]],
     date: "2026-11-03",
     title: "Justice's GTA 6 score arrives December 11",
     seoTitle: "GTA 6 Score by Justice? See what is coming",
@@ -78,6 +80,7 @@ module.exports = [
   },
   {
     slug: "gta-6-pc-q1-2027-report",
+    faq: [["When is GTA 6 coming to PC?","Rockstar has not announced a date. A GamesBeat report from October 13, 2026 points to January to March 2027."],["Do console buyers get a free PC copy?","No. No PC version or upgrade path has been announced."]],
     date: "2026-11-04",
     title: "GTA 6 on PC in early 2027? What the report says",
     seoTitle: "GTA 6 PC in Early 2027? Read the report",
@@ -106,6 +109,7 @@ module.exports = [
   },
   {
     slug: "gta-6-collectors-set",
+    faq: [["Does the GTA 6 Collector's Set include the game?","No. The game is sold separately."],["How much does the Collector's Set cost?","$399.99 on the Rockstar Store, limited to one per person, shipping for November 19."]],
     date: "2026-11-05",
     title: "The $400 GTA 6 Collector's Set has no game in it",
     seoTitle: "GTA 6 Collector's Set? See what $400 gets you",
@@ -134,6 +138,7 @@ module.exports = [
   },
   {
     slug: "miami-heat-night-in-vice-city",
+    faq: [["When is A Night in Vice City?","On Wednesday, November 18, 2026 at 7:00 p.m. at Kaseya Center in Miami."],["Is Vice City based on Miami?","Yes. Vice City is Rockstar's version of Miami, inside the fictional state of Leonida."]],
     date: "2026-11-06",
     title: "Miami becomes Vice City: the Heat's Night in Vice City on November 18",
     seoTitle: "A Night in Vice City? See Miami's GTA 6 event",
@@ -162,6 +167,7 @@ module.exports = [
   },
   {
     slug: "gta-6-extended-look-takeaways",
+    faq: [["How long is the GTA 6 Extended Look?","About 26 minutes. It premiered on Netflix on August 27, 2026 and later came to YouTube."],["How many wanted stars does GTA 6 have?","Up to six, according to the footage."]],
     date: "2026-11-07",
     title: "Six things the Extended Look taught us about GTA 6",
     seoTitle: "GTA 6 Extended Look? See six key takeaways",
@@ -191,6 +197,7 @@ module.exports = [
   },
   {
     slug: "gta-6-standard-or-ultimate",
+    faq: [["Does the Ultimate Edition give a gameplay advantage?","No. It adds vehicles, weapons, shops, outfits, and side content, but no faster progression."],["When is the pre-order bonus deadline?","Buy digitally before November 20, 2026 to get the Vintage Vice City Pack with either edition."]],
     date: "2026-11-08",
     title: "Standard or Ultimate? Picking your GTA 6 edition before launch",
     seoTitle: "GTA 6 Standard or Ultimate? Pick your edition",
@@ -219,6 +226,7 @@ module.exports = [
   },
   {
     slug: "gta-6-facts-vs-rumors",
+    faq: [["How big is the GTA 6 download?","Rockstar has not published a size. An unofficial PS Store reading suggests about 210 GB."],["When do GTA 6 reviews come out?","No review embargo date has been announced."]],
     date: "2026-11-09",
     title: "GTA 6 facts vs rumors: what is real ten days before launch",
     seoTitle: "GTA 6 Facts or Rumors? Check before launch",
@@ -249,6 +257,7 @@ module.exports = [
   },
   {
     slug: "gta-6-preload-guide",
+    faq: [["When does GTA 6 preload start?","On Thursday, November 12, 2026. Rockstar has not given an exact time."],["Can you preload the physical version?","Yes. The box contains a download code, so you redeem it and preload the same way."]],
     date: "2026-11-10",
     title: "How GTA 6 preload works on November 12",
     seoTitle: "GTA 6 Preload? Get ready for November 12",
@@ -277,6 +286,7 @@ module.exports = [
   },
   {
     slug: "gta-6-launch-week-calendar",
+    faq: [["What happens on November 18?","The Miami Heat host A Night in Vice City at Kaseya Center, the evening before launch."],["When does the GTA 6 score come out?","On December 11, 2026."]],
     date: "2026-11-11",
     title: "GTA 6 launch week: every date from November 12 to December 11",
     seoTitle: "GTA 6 Launch Week? See every key date",

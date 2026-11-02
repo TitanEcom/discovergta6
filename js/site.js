@@ -627,10 +627,10 @@
       const subject = `[Discover GTA 6] ${onderwerp}`;
       const body = `${bericht}\n\n-- \n${naam} <${email}>`;
       track("contact_submit", { onderwerp });
-      window.location.href = `mailto:support@titanecomgroup.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = `mailto:contact@discovergta6.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       box.hidden = false;
       box.dataset.kind = "ok";
-      box.innerHTML = 'Your email app should now open with the message ready to send. Nothing happened? Email us directly at <a href="mailto:support@titanecomgroup.com">support@titanecomgroup.com</a>.';
+      box.innerHTML = 'Your email app should now open with the message ready to send. Nothing happened? Email us directly at <a href="mailto:contact@discovergta6.com">contact@discovergta6.com</a>.';
     });
     const clear = document.querySelector("#clear-inbox");
     if (clear) {
