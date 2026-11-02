@@ -1,6 +1,20 @@
 (function () {
   const entries = () => window.ENTRIES || [];
 
+  // Vercel Web Analytics (plain-HTML setup). No cookies.
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  if (!document.querySelector('script[src="/_vercel/insights/script.js"]')) {
+    const va = document.createElement("script");
+    va.defer = true;
+    va.src = "/_vercel/insights/script.js";
+    document.head.appendChild(va);
+  }
+  function track(name, data) {
+    try {
+      window.va("event", { name, data });
+    } catch (error) {}
+  }
+
   function esc(value) {
     return String(value ?? "").replace(/[&<>"']/g, (ch) => ({
       "&": "&amp;",
@@ -491,13 +505,22 @@
       document.body.classList.remove("search-open");
     };
 
-    opener.addEventListener("click", show);
+    opener.addEventListener("click", () => {
+      track("search_open", { pagina: location.pathname });
+      show();
+    });
     layer.addEventListener("click", (event) => {
       if (event.target === layer) hide();
+    });
+    results.addEventListener("click", (event) => {
+      const link = event.target.closest("a");
+      if (!link) return;
+      track("search_result_click", { query: input.value.trim().slice(0, 100), entry: link.getAttribute("href") });
     });
     input.addEventListener("input", paint);
     input.addEventListener("keydown", (event) => {
       if (event.key === "Enter" && current[0]) {
+        track("search_result_click", { query: input.value.trim().slice(0, 100), entry: entryPath(current[0]) });
         location.href = entryPath(current[0]);
       }
     });
@@ -538,6 +561,7 @@
       button.classList.add("is-on");
       button.setAttribute("aria-pressed", "true");
       catalog.dataset.catalog = button.dataset.filter;
+      track("catalog_filter", { pagina: location.pathname, filter: button.dataset.filter });
       renderCatalog();
     });
   }
@@ -611,6 +635,7 @@
         box.textContent = "This browser is blocking local storage, so the message was not saved.";
         return;
       }
+      track("contact_submit", { onderwerp });
       form.reset();
       box.hidden = false;
       box.dataset.kind = "ok";
@@ -643,7 +668,23 @@
     });
   }
 
+  function initOutbound() {
+    document.addEventListener("click", (event) => {
+      const link = event.target.closest && event.target.closest("a[href]");
+      if (!link) return;
+      let url;
+      try {
+        url = new URL(link.href, location.href);
+      } catch (error) {
+        return;
+      }
+      if (!/^https?:$/.test(url.protocol) || url.hostname === location.hostname || url.hostname.endsWith("discovergta6.com")) return;
+      track("outbound_click", { domein: url.hostname, pagina: location.pathname });
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
+    initOutbound();
     initMotion();
     initNav();
     initCountdown();
