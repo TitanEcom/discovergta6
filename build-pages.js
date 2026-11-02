@@ -299,7 +299,10 @@ for (const name of htmlFiles) {
   else if (canonical) html = decorateHead(html, canonical, "index, follow");
   written.set(target, html);
 }
-for (const name of Object.keys(hubRename)) fs.unlinkSync(path.join(root, name));
+for (const name of Object.keys(hubRename)) {
+  const filePath = path.join(root, name);
+  if (fs.existsSync(filePath)) fs.unlinkSync(filePath);
+}
 if (fs.existsSync(path.join(root, "artikel.html"))) fs.unlinkSync(path.join(root, "artikel.html"));
 
 const shell = written.get("characters.html");
