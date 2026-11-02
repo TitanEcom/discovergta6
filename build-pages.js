@@ -325,7 +325,7 @@ function articleHtml(item) {
   const url = entryPath(item);
   const description = item.summary.length > 155 ? `${item.summary.slice(0, 152).trim()}...` : item.summary;
   let pageHead = head
-    .replace(/<title>[^<]*<\/title>/, `<title>${esc(item.name)} | GTA Wiki</title>`)
+    .replace(/<title>[^<]*<\/title>/, `<title>${esc(item.name)} | DiscoverGTA6</title>`)
     .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc(description)}">`)
     .replace(/<link rel="canonical" href="[^"]*">/, `<link rel="canonical" href="${absolute(url)}">`);
   if (prev) pageHead += `\n  <link rel="prev" href="${esc(absolute(entryPath(prev)))}">`;
@@ -338,7 +338,7 @@ function articleHtml(item) {
     inLanguage: "en",
     url: absolute(url),
     articleSection: item.typeLabel,
-    isPartOf: { "@type": "WebSite", name: "GTA Wiki", url: `${ORIGIN}/` }
+    isPartOf: { "@type": "WebSite", name: "DiscoverGTA6", url: `${ORIGIN}/` }
   };
   if (item.date) ld.datePublished = item.date;
   pageHead += `\n  <script type="application/ld+json">\n  ${JSON.stringify(ld, null, 2).replace(/</g, "\\u003c")}\n  </script>\n</head>`;

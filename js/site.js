@@ -324,11 +324,11 @@
     const id = new URLSearchParams(location.search).get("id");
     const item = id && byId(id);
     if (!item) {
-      document.title = "Not found | GTA Wiki";
+      document.title = "Not found | Discover GTA 6";
       root.innerHTML = '<p class="kicker">Archive</p><h1>This entry does not exist</h1><p class="lede">The link is incomplete, or the topic is not in the archive yet.</p><p><a class="pill" href="/archive">Learn More</a></p>';
       return;
     }
-    document.title = `${item.name} | GTA Wiki`;
+    document.title = `${item.name} | Discover GTA 6`;
     remember(item.id);
     const facts = (item.facts || []).map(([label, value]) => `<div><dt>${esc(label)}</dt><dd>${esc(value)}</dd></div>`).join("");
     const paragraphs = (item.body || []).map((paragraph) => `<p>${esc(paragraph)}</p>`).join("");
@@ -624,23 +624,13 @@
         box.textContent = errors.join(" ");
         return;
       }
-      const ticket = `VC-${Date.now().toString(36).toUpperCase()}`;
-      try {
-        const all = readMail();
-        all.push({ ticket, naam, email, onderwerp, bericht, at: new Date().toISOString() });
-        localStorage.setItem("gtawiki-mail", JSON.stringify(all));
-      } catch (error) {
-        box.hidden = false;
-        box.dataset.kind = "error";
-        box.textContent = "This browser is blocking local storage, so the message was not saved.";
-        return;
-      }
+      const subject = `[Discover GTA 6] ${onderwerp}`;
+      const body = `${bericht}\n\n-- \n${naam} <${email}>`;
       track("contact_submit", { onderwerp });
-      form.reset();
+      window.location.href = `mailto:support@titanecomgroup.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       box.hidden = false;
       box.dataset.kind = "ok";
-      box.textContent = `Received as ${ticket}. The message stays on this device and is not sent to Rockstar.`;
-      renderInbox();
+      box.innerHTML = 'Your email app should now open with the message ready to send. Nothing happened? Email us directly at <a href="mailto:support@titanecomgroup.com">support@titanecomgroup.com</a>.';
     });
     const clear = document.querySelector("#clear-inbox");
     if (clear) {
