@@ -27,7 +27,7 @@ for (const p of posts) {
   if (t.length > 60 || /:/.test(t) || /:/.test(p.description) || p.description.length > 160) throw new Error(`meta rules broken for ${p.slug}`);
 }
 
-const ORG = { "@type": "Organization", "@id": `${ORIGIN}/#org`, name: BRAND, alternateName: "Discover GTA 6", url: `${ORIGIN}/`, logo: `${ORIGIN}/favicon.svg`, email: EMAIL };
+const ORG = { "@type": "Organization", "@id": `${ORIGIN}/#org`, name: BRAND, alternateName: "Discover GTA 6", url: `${ORIGIN}/`, logo: `${ORIGIN}/logo/discover-gta6-avatar.png`, email: EMAIL };
 const SITE = { "@type": "WebSite", "@id": `${ORIGIN}/#website`, name: BRAND, alternateName: "Discover GTA 6", url: `${ORIGIN}/`, inLanguage: "en", publisher: { "@id": `${ORIGIN}/#org` } };
 const crumbs = (list) => ({ "@type": "BreadcrumbList", itemListElement: list.map(([name, url], i) => ({ "@type": "ListItem", position: i + 1, name, item: ORIGIN + url })) });
 
@@ -142,6 +142,7 @@ for (const f of files) {
   else h = h.replace(/(<a class="skip" href="#inhoud">Skip to content<\/a>)/, `$1\n  ${topbar}`);
   if (!h.includes('data-navlink="blog"')) h = h.replace(/(<a href="\/news" data-navlink="news">News<\/a>)(\s*)/, `$1$2<a href="/blog" data-navlink="blog">Blog</a>$2`);
   if (!h.includes('<a href="/blog">Blog</a>')) h = h.replace(/(<a href="\/news">News<\/a>)(\s*)/, `$1$2<a href="/blog">Blog</a>$2`);
+  if (h.includes("<!--home-blog-->")) h = h.replace(/<!--home-blog-->[\s\S]*?<!--\/home-blog-->/, `<!--home-blog--><div class="catalog catalog-3">${published.slice(0, 3).map(card).join("")}</div><!--/home-blog-->`);
   if (h !== before) fs.writeFileSync(f, h);
 }
 

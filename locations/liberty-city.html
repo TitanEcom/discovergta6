@@ -28,7 +28,12 @@
   <meta name="twitter:description" content="Liberty City in GTA 6? The old city from earlier games. Explore the place and what Rockstar says about it.">
   <meta name="twitter:image" content="https://www.rockstargames.com/VI/_next/static/media/Vice_City_09.0~ng.c8ack3fp.jpg?akim=1&amp;imdensity=1&amp;imwidth=1400">
   <link rel="preconnect" href="https://www.rockstargames.com">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+  <link rel="icon" href="/favicon-96.png" type="image/png" sizes="96x96">
+  <link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/css/site.css">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4375365713023186" crossorigin="anonymous"></script>
 
@@ -92,7 +97,7 @@
       "@id": "https://discovergta6.com/#org",
       "name": "DiscoverGTA6", "alternateName": "Discover GTA 6",
       "url": "https://discovergta6.com/",
-      "logo": "https://discovergta6.com/favicon.svg", "email": "support@titanecomgroup.com", "description": "Independent fan guide to Grand Theft Auto VI."
+      "logo": "https://discovergta6.com/logo/discover-gta6-avatar.png", "email": "support@titanecomgroup.com", "description": "Independent fan guide to Grand Theft Auto VI."
     },
     {
       "@type": "WebSite",
@@ -132,15 +137,25 @@
     <a class="skip" href="#inhoud">Skip to content</a>
   <!--topbar--><div class="topbar"><div class="topbar-inner"><span class="topbar-label">New on the blog</span><a class="topbar-link" href="/blog/gta-6-17-days-everything-confirmed">17 days to GTA 6: everything that is confirmed</a><a class="topbar-all" href="/blog">All posts</a></div></div><!--/topbar-->
   <header class="top" id="top">
-    <a class="brand" href="/">Discover <em>GTA 6</em></a>
+    <a class="brand" href="/" aria-label="Discover GTA 6 home"><img src="/logo/discover-gta6-logo.svg" alt="Discover GTA 6" width="808" height="144"></a>
+    <nav class="topnav" aria-label="Sections">
+      <a href="/characters" data-navlink="characters">Characters</a>
+      <a href="/locations" data-navlink="locations">Locations</a>
+      <a href="/map" data-navlink="map">Map</a>
+      <a href="/vehicles" data-navlink="vehicles">Vehicles</a>
+      <a href="/gameplay" data-navlink="gameplay">Gameplay</a>
+      <a href="/editions" data-navlink="editions">Editions</a>
+      <a href="/news" data-navlink="news">News</a>
+      <a href="/blog" data-navlink="blog">Blog</a>
+    </nav>
     <div class="top-actions">
       <button class="icon-btn" type="button" id="open-search" aria-label="Search">
-        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.25" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M16.2 16.2 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.25" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M16.2 16.2 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span class="icon-btn-label">Search</span>
       </button>
       <a class="pill" href="https://www.rockstargames.com/VI" rel="noopener noreferrer">Pre-Order Now</a>
     </div>
     <button class="burger" type="button" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Expand Navigation Menu">
-      <span class="burger-bars" aria-hidden="true"><i></i><i></i></span>
+      <span class="burger-bars" aria-hidden="true"><i></i><i></i></span><span class="burger-label">Menu</span>
     </button>
     <nav class="nav" id="nav" inert aria-label="Main">
       <div class="nav-main">
@@ -170,21 +185,20 @@
     <nav class="kicker" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/locations">Locations</a></nav>
     <h1>Liberty City</h1>
     <p class="lede">The old city from earlier games. In VI, the past of Lucia&#39;s family, and not announced as a playable area.</p>
-    <figure class="hero-figure">
-      <img src="https://www.rockstargames.com/VI/_next/static/media/Vice_City_09.0~ng.c8ack3fp.jpg?akim=1&amp;imdensity=1&amp;imwidth=1400" alt="Liberty City in Grand Theft Auto VI (GTA 6)" width="1400" height="788" fetchpriority="high" decoding="async" style="object-position:center top">
-    </figure>
     <div class="article-grid">
       <article class="prose">
         <p>Liberty City is the city of earlier Grand Theft Auto games. In VI it belongs to Lucia&#39;s family history: the life her mother already wanted there, and that Lucia tries to force for herself in <a href="/locations/leonida">Leonida</a>.</p><p>Rockstar has not announced that you travel to Liberty City. Until that announcement exists, the city is not part of the playable map.</p><p>The exact wording in Lucia&#39;s profile: she wants &#39;the good life her mom has dreamed of since their days in Liberty City.&#39; That makes the city the family&#39;s past before Leonida. Liberty City has been the series&#39; version of New York since Grand Theft Auto III and Grand Theft Auto IV.</p>
         <p><a href="/contact?entry=liberty-city">Send a correction</a></p>
       </article>
-      <aside class="facts">
+      <aside class="facts infobox" aria-label="Quick facts">
+        <p class="infobox-title">Liberty City</p>
+        <figure class="infobox-image"><img src="https://www.rockstargames.com/VI/_next/static/media/Vice_City_09.0~ng.c8ack3fp.jpg?akim=1&amp;imdensity=1&amp;imwidth=1400" alt="Liberty City in Grand Theft Auto VI (GTA 6)" width="1400" height="788" fetchpriority="high" decoding="async" style="object-position:center top"></figure>
         <span class="badge" data-status="Background">Background</span>
         <dl><div><dt>In VI</dt><dd>Background, no confirmed playable map</dd></div><div><dt>Connection</dt><dd>Lucia&#39;s mother&#39;s youth</dd></div></dl>
         <p class="fine">Summarized from public announcements and reporting through November 2, 2026. Sources: <a href="https://www.rockstargames.com/VI/only-in-leonida" rel="noopener noreferrer">Rockstar Games: Only in Leonida</a>, <a href="https://www.gtabase.com/gta-6/map-locations/" rel="noopener noreferrer">GTABase: map locations</a>.</p>
       </aside>
     </div>
-    <h2>Related</h2><div class="catalog"><a class="card" href="/characters/lucia-caminos">
+    <h2>Related articles</h2><div class="catalog"><a class="card" href="/characters/lucia-caminos">
       <span class="card-media" style="background-image:url('https://www.rockstargames.com/VI/_next/static/media/Lucia_Caminos_01.0a7yqvewctkfp.jpg?akim=1&amp;imdensity=1&amp;imwidth=1400');background-position:center 28%;background-size:cover"></span>
       <span class="card-body">
         <span class="kicker">Character · Confirmed</span>
@@ -207,7 +221,7 @@
   <footer class="foot">
     <div class="foot-top">
       <div class="foot-brand">
-        <a class="foot-logo" href="/">Discover <em>GTA 6</em></a>
+        <a class="foot-logo" href="/" aria-label="Discover GTA 6 home"><img src="/logo/discover-gta6-logo.svg" alt="Discover GTA 6" width="808" height="144" loading="lazy"></a>
         <p>The independent fan guide to Grand Theft Auto VI. Characters, places, editions, and every confirmed detail, with a source behind each entry.</p>
         <p class="foot-release"><span>Release</span>November 19, 2026 · PS5 and Xbox Series X|S</p>
         <a class="foot-mail" href="mailto:support@titanecomgroup.com">support@titanecomgroup.com</a>

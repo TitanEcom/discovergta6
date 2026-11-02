@@ -28,7 +28,12 @@
   <meta name="twitter:description" content="GTA 6 Album? An album of 34 original songs, alongside the score by Justice. Read what happened and why it matters.">
   <meta name="twitter:image" content="https://www.rockstargames.com/VI/_next/static/media/The_Album_Cover_Art_landscape.000ifb9a.j-gp.jpg?akim=1&amp;imdensity=1&amp;imwidth=1400">
   <link rel="preconnect" href="https://www.rockstargames.com">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+  <link rel="icon" href="/favicon-96.png" type="image/png" sizes="96x96">
+  <link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/css/site.css">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4375365713023186" crossorigin="anonymous"></script>
 
@@ -94,7 +99,7 @@
       "@id": "https://discovergta6.com/#org",
       "name": "DiscoverGTA6", "alternateName": "Discover GTA 6",
       "url": "https://discovergta6.com/",
-      "logo": "https://discovergta6.com/favicon.svg", "email": "support@titanecomgroup.com", "description": "Independent fan guide to Grand Theft Auto VI."
+      "logo": "https://discovergta6.com/logo/discover-gta6-avatar.png", "email": "support@titanecomgroup.com", "description": "Independent fan guide to Grand Theft Auto VI."
     },
     {
       "@type": "WebSite",
@@ -134,15 +139,25 @@
     <a class="skip" href="#inhoud">Skip to content</a>
   <!--topbar--><div class="topbar"><div class="topbar-inner"><span class="topbar-label">New on the blog</span><a class="topbar-link" href="/blog/gta-6-17-days-everything-confirmed">17 days to GTA 6: everything that is confirmed</a><a class="topbar-all" href="/blog">All posts</a></div></div><!--/topbar-->
   <header class="top" id="top">
-    <a class="brand" href="/">Discover <em>GTA 6</em></a>
+    <a class="brand" href="/" aria-label="Discover GTA 6 home"><img src="/logo/discover-gta6-logo.svg" alt="Discover GTA 6" width="808" height="144"></a>
+    <nav class="topnav" aria-label="Sections">
+      <a href="/characters" data-navlink="characters">Characters</a>
+      <a href="/locations" data-navlink="locations">Locations</a>
+      <a href="/map" data-navlink="map">Map</a>
+      <a href="/vehicles" data-navlink="vehicles">Vehicles</a>
+      <a href="/gameplay" data-navlink="gameplay">Gameplay</a>
+      <a href="/editions" data-navlink="editions">Editions</a>
+      <a href="/news" data-navlink="news">News</a>
+      <a href="/blog" data-navlink="blog">Blog</a>
+    </nav>
     <div class="top-actions">
       <button class="icon-btn" type="button" id="open-search" aria-label="Search">
-        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.25" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M16.2 16.2 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.25" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M16.2 16.2 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span class="icon-btn-label">Search</span>
       </button>
       <a class="pill" href="https://www.rockstargames.com/VI" rel="noopener noreferrer">Pre-Order Now</a>
     </div>
     <button class="burger" type="button" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Expand Navigation Menu">
-      <span class="burger-bars" aria-hidden="true"><i></i><i></i></span>
+      <span class="burger-bars" aria-hidden="true"><i></i><i></i></span><span class="burger-label">Menu</span>
     </button>
     <nav class="nav" id="nav" inert aria-label="Main">
       <div class="nav-main">
@@ -172,21 +187,20 @@
     <nav class="kicker" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/news">News</a><a href="/blog">Blog</a></nav>
     <h1>GTA VI: The Album</h1>
     <p class="lede">An album of 34 original songs, alongside the score by Justice.</p>
-    <figure class="hero-figure">
-      <img src="https://www.rockstargames.com/VI/_next/static/media/The_Album_Cover_Art_landscape.000ifb9a.j-gp.jpg?akim=1&amp;imdensity=1&amp;imwidth=1400" alt="GTA VI: The Album in Grand Theft Auto VI (GTA 6)" width="1400" height="788" fetchpriority="high" decoding="async" style="object-position:center">
-    </figure>
     <div class="article-grid">
       <article class="prose">
         <p>On September 17, 2026, Rockstar announced Grand Theft Auto VI: The Album, with 34 original songs. The music press names Travis Scott, Rauw Alejandro, and Keith Richards among the names around that album. The full tracklist stays out of this summary until it is officially settled. The score for the trailers and the game is a separate thread: Justice.</p><p>IGN reported that the album also gets a physical CD and vinyl release. It is set to come out on November 19, 2026, the same day as the game.</p><p>Singles out before release include Travis Scott&#39;s RHYNO, Morgan Wallen&#39;s Last Thing You Need, Rauw Alejandro&#39;s Macacoa 2000, and Justice&#39;s Flower in a Hurricane with Tame Impala, SZA, and King Gizzard &amp; The Lizard Wizard. Whether album songs also play on the in-game radio has not been confirmed.</p>
         <p><a href="/contact?entry=the-album">Send a correction</a></p>
       </article>
-      <aside class="facts">
+      <aside class="facts infobox" aria-label="Quick facts">
+        <p class="infobox-title">GTA VI: The Album</p>
+        <figure class="infobox-image"><img src="https://www.rockstargames.com/VI/_next/static/media/The_Album_Cover_Art_landscape.000ifb9a.j-gp.jpg?akim=1&amp;imdensity=1&amp;imwidth=1400" alt="GTA VI: The Album in Grand Theft Auto VI (GTA 6)" width="1400" height="788" fetchpriority="high" decoding="async" style="object-position:center"></figure>
         <span class="badge" data-status="Confirmed">Confirmed</span>
         <dl><div><dt>Announcement</dt><dd>September 17, 2026</dd></div><div><dt>Size</dt><dd>34 original tracks</dd></div><div><dt>Releases</dt><dd>With the game</dd></div></dl>
         <p class="fine">Summarized from public announcements and reporting through November 2, 2026. Sources: <a href="https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI" rel="noopener noreferrer">Wikipedia: Grand Theft Auto VI</a>, <a href="https://timesaver.gg/blog/gta-6-radio-stations-soundtrack-confirmed-2026" rel="noopener noreferrer">Timesaver: radio stations</a>.</p>
       </aside>
     </div>
-    <h2>Related</h2><div class="catalog"><a class="card" href="/news/launch-trailer">
+    <h2>Related articles</h2><div class="catalog"><a class="card" href="/news/launch-trailer">
       <span class="card-media" style="background-image:url('https://www.rockstargames.com/VI/_next/static/media/launch-trailer.0_q-sdrgufc.s.jpg?akim=1&amp;imdensity=1&amp;imwidth=1400');background-position:center;background-size:cover"></span>
       <span class="card-body">
         <span class="kicker">News · October 15, 2026</span>
@@ -209,7 +223,7 @@
   <footer class="foot">
     <div class="foot-top">
       <div class="foot-brand">
-        <a class="foot-logo" href="/">Discover <em>GTA 6</em></a>
+        <a class="foot-logo" href="/" aria-label="Discover GTA 6 home"><img src="/logo/discover-gta6-logo.svg" alt="Discover GTA 6" width="808" height="144" loading="lazy"></a>
         <p>The independent fan guide to Grand Theft Auto VI. Characters, places, editions, and every confirmed detail, with a source behind each entry.</p>
         <p class="foot-release"><span>Release</span>November 19, 2026 · PS5 and Xbox Series X|S</p>
         <a class="foot-mail" href="mailto:support@titanecomgroup.com">support@titanecomgroup.com</a>

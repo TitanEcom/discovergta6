@@ -1,4 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" fill="#070708"/>
-  <text x="16" y="22" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#f3efe6">VI</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" fill="#120e2e"/><g transform="translate(256 256) scale(.88) translate(-256 -256)" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M118 150 L200 362 L282 150 M376 150 V362" stroke="#e8368f" stroke-width="56" opacity="0.35"/><path d="M118 150 L200 362 L282 150 M376 150 V362" stroke="#ff7eb6" stroke-width="28"/><path d="M118 150 L200 362 L282 150 M376 150 V362" stroke="#f4eefc" stroke-width="10"/></g></svg>
